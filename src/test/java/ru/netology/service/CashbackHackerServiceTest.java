@@ -18,6 +18,6 @@ public class CashbackHackerServiceTest {
     @Test
     public void shouldCalculateFrom1000() {
         CashbackHackerService service = new CashbackHackerService();
-        Assert.assertEquals(service.remain(1000), 1000);
+        Assert.assertEquals(service.remain(1000), 0);
     }
 }
