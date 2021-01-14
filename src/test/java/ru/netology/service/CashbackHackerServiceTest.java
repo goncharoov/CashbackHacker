@@ -1,26 +1,24 @@
 package ru.netology.service;
 
 import org.junit.Test;
-import org.junit.Assert;
-
 import static org.junit.Assert.assertEquals;
 
 public class CashbackHackerServiceTest {
     @Test
     public void shouldCalculateFrom900() {
         CashbackHackerService service = new CashbackHackerService();
-        assertEquals(service.remain(900), 100);
+        assertEquals(100, service.remain(900));
     }
 
     @Test
     public void shouldCalculateFrom0() {
         CashbackHackerService service = new CashbackHackerService();
-        assertEquals(service.remain(0), 1000);
+        assertEquals(1000, service.remain(0));
     }
 
     @Test
     public void shouldCalculateFrom1000() {
         CashbackHackerService service = new CashbackHackerService();
-        assertEquals(service.remain(1000), 0);
+        assertEquals(0, service.remain(1000));
     }
 }
